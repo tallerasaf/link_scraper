@@ -11,7 +11,7 @@ requests-html = "*"
 loguru = "*"
 
 [dev-packages]
-black = "==19.3b0"
+black = "*"
 flake8 = "*"
 isort = "*"
 mypy = "*"

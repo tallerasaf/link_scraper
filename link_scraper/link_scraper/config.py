@@ -1,2 +1,2 @@
 DEFAULT_URL = "http://www.blankwebsite.com/"
-DEFAULT_DEPTH = 1
+DEFAULT_DEPTH = 2
