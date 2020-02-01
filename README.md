@@ -7,6 +7,9 @@ pipenv install
 
 # Run the code
 pipenv run python link_scraper
+
+# Run the tests
+pipenv run pytest
 ```
 
 ## Built With
@@ -14,4 +17,4 @@ pipenv run python link_scraper
 
 
 ## Credits
-This package was created with Cookiecutter and the [sourcery-ai/python-best-practices-cookiecutter](https://github.com/sourcery-ai/python-best-practices-cookiecutter) project template.
+This project was created with Cookiecutter and the [sourcery-ai/python-best-practices-cookiecutter](https://github.com/sourcery-ai/python-best-practices-cookiecutter) project template.

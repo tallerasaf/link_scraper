@@ -1,11 +1,13 @@
-from link_scraper import link_scraper
+from link_scraper import LinkScraper
 
 
-def test_fib() -> None:
-    assert link_scraper.fib(0) == 0
-    assert link_scraper.fib(1) == 1
-    assert link_scraper.fib(2) == 1
-    assert link_scraper.fib(3) == 2
-    assert link_scraper.fib(4) == 3
-    assert link_scraper.fib(5) == 5
-    assert link_scraper.fib(10) == 55
+def test_link_scraper() -> None:
+    link_scraper = LinkScraper()
+    assert link_scraper.get_links(depth=0) == {
+        "url": "http://www.blankwebsite.com/",
+        "urls": [],
+    }
+    assert link_scraper.get_links(depth=1) == {
+        "url": "http://www.blankwebsite.com/",
+        "urls": [{"url": "http://www.pointlesssites.com/", "urls": []}],
+    }
